@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #800080;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    Font-family:verdana;
+}
+
+li a:hover {
+    background-color: #FFFF00;
+}
+p {
+    border: 10px solid #800080;
+    padding: 20px;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Images form web surgery */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/2 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #800080;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+h1 {
+    border-bottom: 6px solid purple;
+    background-color: #FFFF00;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="CPDhours.html">CPD</a></li>
+  <li><a href="surgery.html">Surgery</a></li>
+  <li><a href="studentmentorsessions.html">Student mentor session</a></li>
+  <li><a href="Companyvisits.html">Company visits</a></li>
+  <li><a href="miscellaneous.html">Miscellaneous</a></li>
+  <li style="float:right"><a href="aboutme.html">About me</a></li>
+</ul>
+<div style="padding:20px;margin-top:30px;background-color:#FFE4B5;height:1500px;">
+
+<h1 style="font-family:verdana;"><u>Surgery</u></h1>
+<b style="font-family:verdana;">Surgeries are very important because they go into in depth about specific parts of a module that people may need help with or do not understand.</b>
+<br/>
+<h5 style="font-family:verdana;">The total amount of hours for surgery counted towards my continued personal development is 4 hours.</h5>
+<p style="font-family:verdana;">My first ever surgery was on the  <u>13/11/18</u> and it only lasted an hour. The surgery was very popular. So many people turned up that the group had to be split into two rooms, MAE205 and MAE207. The only problem was that there was only one teacher so he had to flip flop between rooms. The main focus of the surgery was python, Bhavesh who was are lecture told us in detail about how to use loops and and what certain outputs are created by different inputs.</p>
+
+<p style="font-family:verdana;">The second surgery was straight after the first surgery on <u>13/11/18</u>, this also only lasted an hour. However, this surgery was more focused on maths. Even though a lot of people turned up we were all able to fit in one room but some were standing. In this surgery we went through the maths specimen paper in preparation for the next maths test in week 8. Jo provided support by answering any questions we had about the test.</p> 
+
+<p style="font-family:verdana;">The third surgery was a web based surgery which lasted for an hour. It was on the <u>13/11/18</u>. This surgery was focused predominantly on the assignment of our CPD hours to be transformed into a HTML website. Matthew Bates who was the lecturer for that surgery showed us many ways to add a navigation bar that will lift our grade. He also showed us what the grader will be looking for to give you a higher grade. Below is a image slideshow of the surgery.</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="mattbates1.jpg" style="width:100%">
+  <div class="text">Images from web surgery</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="mattbates2.jpg" style="width:100%">
+  <div class="text">Images from web surgery</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<p style="font-family:verdana;">The fourth and final surgery was the technology surgery. This surgery was for an hour and was on the <u>14/11/18</u>. This surgery was focused around questions that any one had based on the technology strand, some people asked about the upcoming technology test. Not many people had questions to ask Tony who was our lecturer for the technology strand.</p>
+
+
+
+<body style="background-color:#FFFF00;">
+</body>
+</html>
